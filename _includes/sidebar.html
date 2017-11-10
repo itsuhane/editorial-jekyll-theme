@@ -14,6 +14,25 @@
       <header class="major">
         <h2>Menu</h2>
       </header>
+      {% if site.data[0] %}
+      <ul>
+        {% for item in site.data.menu %}
+        <li>
+          {% if item.items[0] %}
+          <span class="opener">{{ item.name }}</span>
+          <ul>
+            {% for subitem in item.items %}
+            <li><a href="{{ site.baseurl }}{{ subitem.url }}">{{ subitem.name }}</a></li>
+            {% endfor %}
+          </ul>
+          {% else %}
+          <a href="{{ site.baseurl }}{{ item.url }}">{{ item.name }}</a>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+      {% comment %}
       <ul>
         <li><a href="index.html">Homepage</a></li>
         <li><a href="generic.html">Generic</a></li>
@@ -40,6 +59,7 @@
         <li><a href="#">Sapien Mauris</a></li>
         <li><a href="#">Amet Lacinia</a></li>
       </ul>
+      {% endcomment %}
     </nav>
 
     <!-- Section -->

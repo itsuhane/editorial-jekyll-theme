@@ -1,0 +1,37 @@
+- name: Homepage
+  url: /
+- name: Generic
+  url: /generic/
+- name: Elements
+  url: /elements/
+- name: Submenu
+  items:
+    - name: Lorem Dolor
+      url: "#"
+    - name: Ipsum Adipiscing
+      url: "#"
+    - name: Tempus Magna
+      url: "#"
+    - name: Feugiat Veroeros
+      url: "#"
+- name: Etiam Dolore
+  url: "#"
+- name: Adipiscing
+  url: "#"
+- name: Another Submenu
+  items:
+    - name: Lorem Dolor
+      url: "#"
+    - name: Ipsum Adipiscing
+      url: "#"
+    - name: Tempus Magna
+      url: "#"
+    - name: Feugiat Veroeros
+      url: "#"
+- name: Maximus Erat
+  url: "#"
+- name: Sapien Mauris
+  url: "#"
+- name: Amet Lacinia
+  url: "#"
+
