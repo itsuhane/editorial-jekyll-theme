@@ -1,0 +1,17 @@
+# Dependencies
+markdown:         kramdown
+mathjax:          true
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Epipolar
+url:              https://itsuhane.github.io
+baseurl:          /
+
+author:
+  name:           'itsuhane'
+  url:            https://github.com/itsuhane
+
+paginate:         5
