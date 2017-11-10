@@ -1,3 +1,0 @@
-{% endcapture %}
-{{ col_content | markdownify }}
-</div>
