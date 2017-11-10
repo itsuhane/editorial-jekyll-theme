@@ -2220,6 +2220,11 @@
 		padding: 0.5em 0 0.5em 2em;
 	}
 
+	/* itsuhane: workaround for Kramdown */
+	blockquote > p:last-child {
+		margin: 0;
+	}
+
 	code {
 		background: rgba(230, 235, 237, 0.25);
 		border-radius: 0.375em;
