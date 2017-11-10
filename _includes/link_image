@@ -1,0 +1,1 @@
+<a href="include.href" class="image"><img src="{{ site.baseurl }}{{ site.assets.images }}{{ include.url }}" alt="" /></a>
