@@ -76,7 +76,7 @@ Item3
 
 #### Fit
 
-{% include asset_image url="pic11.jpg" %}
+{% include asset_image url="/pic11.jpg" %}
 
 #### Left &amp; Right
 
