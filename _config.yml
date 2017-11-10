@@ -17,7 +17,11 @@ assets:
   images:         /assets/images
 
 author:
-  name:           'itsuhane'
+  name:           itsuhane
   url:            https://github.com/itsuhane
+  email:          itsuhane@gmail.com
+  phone:          (000) 000-0000
+  address:        Zhejiang Univ.
+  address2:       Hangzhou, China
 
 paginate:         5

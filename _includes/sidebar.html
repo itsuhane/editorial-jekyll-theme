@@ -61,14 +61,24 @@
       </header>
       <p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
       <ul class="contact">
-        <li class="fa-envelope-o"><a href="#">information@untitled.tld</a></li>
-        <li class="fa-phone">(000) 000-0000</li>
-        <li class="fa-home">1234 Somewhere Road #8254<br/>Nashville, TN 00000-0000</li>
+        {% if site.author.url %}
+        <li class="fa-envelope-o"><a href="mailto:{{ site.author.url }}">{{ site.author.url }}</a></li>
+        {% endif %}
+        {% if site.author.phone %}
+        <li class="fa-phone">{{ site.author.phone }}</li>
+        {% endif %}
+        {% if site.author.address %}
+        <li class="fa-home">1234 Somewhere Road #8254
+          {% if site.author.address2 %}
+          <br/>Nashville, TN 00000-0000
+          {% endif %}
+        </li>
+        {% endif %}
       </ul>
     </section>
     <!-- Footer -->
     <footer id="footer">
-      <p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+      <p class="copyright">&copy; {{ site.title }}. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Jekyll port: <a href="https://itsuhane.github.io">itsuhane</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
     </footer>
   </div>
 </div>
