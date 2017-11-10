@@ -9,5 +9,7 @@
 {% elsif include.pos=="2/2" %}
 <div class="6u$ 12u$(small)">
 {% else %}
+<div>
 {% endif %}
-{% capture col_content %}
+{{ include.content | markdownify }}
+</div>
