@@ -8,7 +8,13 @@ permalink:        pretty
 # Setup
 title:            Epipolar
 url:              https://itsuhane.github.io
-baseurl:          /
+baseurl:          /editorial-jekyll-theme
+
+assets:
+  styles:         /assets/styles
+  fonts:          /assets/fonts
+  scripts:        /assets/scripts
+  images:         /assets/images
 
 author:
   name:           'itsuhane'
