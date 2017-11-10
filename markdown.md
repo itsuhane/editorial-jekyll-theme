@@ -7,38 +7,37 @@ title: Elements
 Praesent ac adipiscing ullamcorper semper ut amet ac risus. Lorem sapien ut odio odio nunc. Ac adipiscing nibh porttitor erat risus justo adipiscing adipiscing amet placerat accumsan. Vis. Faucibus odio magna tempus adipiscing a non. In mi primis arcu ut non accumsan vivamus ac blandit adipiscing adipiscing arcu metus praesent turpis eu ac lacinia nunc ac commodo gravida adipiscing eget accumsan ac nunc adipiscing adipiscing lorem ipsum dolor sit amet nullam veroeros adipiscing.
 
 {% capture row_content %}
-  {% capture column_content %}
+
+{% capture column_content %}
 ### Sem turpis amet semper
 Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat commodo eu sed ante lacinia. Sapien a lorem in integer ornare praesent commodo adipiscing arcu in massa commodo lorem accumsan at odio massa ac ac. Semper adipiscing varius montes viverra nibh in adipiscing blandit tempus accumsan.
-  {% endcapture %}
-  {% include column pos="1/2" content=column_content %}
+{% endcapture %}
+{% include column pos="1/2" content=column_content %}
 
-  {% capture column_content %}
-  ### Magna odio tempus commodo
-  In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor. Ante commodo blandit adipiscing integer semper orci eget. Faucibus commodo adipiscing mi eu nullam accumsan morbi arcu ornare odio mi adipiscing nascetur lacus ac interdum morbi accumsan vis mi accumsan.
-  {% endcapture %}
-  {% include column pos="2/2" content=column_content %}
+{% capture column_content %}
+### Magna odio tempus commodo
+In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor. Ante commodo blandit adipiscing integer semper orci eget. Faucibus commodo adipiscing mi eu nullam accumsan morbi arcu ornare odio mi adipiscing nascetur lacus ac interdum morbi accumsan vis mi accumsan.
+{% endcapture %}
+{% include column pos="2/2" content=column_content %}
 
-  {% capture column_content %}
+{% capture column_content %}
 ### Interdum sapien gravida
-
 Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit.
-  {% endcapture %}
-  {% include column pos="1/3" content=column_content %}
+{% endcapture %}
+{% include column pos="1/3" content=column_content %}
 
-  {% capture column_content %}
-  ### Faucibus consequat lorem
+{% capture column_content %}
+### Faucibus consequat lorem
+Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit.
+{% endcapture %}
+{% include column pos="2/3" content=column_content %}
 
-  Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit.
-  {% endcapture %}
-  {% include column pos="2/3" content=column_content %}
+{% capture column_content %}
+### Accumsan montes viverra
+Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit.
+{% endcapture %}
+{% include column pos="3/3" content=column_content %}
 
-  {% capture column_content %}
-  ### Accumsan montes viverra
-
-  Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit.
-  {% endcapture %}
-  {% include column pos="3/3" content=column_content %}
 {% endcapture %}
 {% include row content=row_content %}
 
@@ -46,6 +45,7 @@ Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor s
 
 ## Elements
 
+{% capture row_content %}
 <div class="row 200%">
   <div class="6u 12u$(medium)">
     <!-- Text stuff -->
@@ -386,4 +386,5 @@ while (!deck.isInOrder()) {
 print 'It took ' + i + ' iterations to sort the deck.';
 </code></pre>
   </div>
-</div>
+{% endcapture %}
+{% include row size="200%" content=row_content %}
