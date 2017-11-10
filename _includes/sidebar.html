@@ -62,15 +62,16 @@
       <p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
       <ul class="contact">
         {% if site.author.url %}
-        <li class="fa-envelope-o"><a href="mailto:{{ site.author.url }}">{{ site.author.url }}</a></li>
+        <li class="fa-envelope-o"><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
         {% endif %}
         {% if site.author.phone %}
         <li class="fa-phone">{{ site.author.phone }}</li>
         {% endif %}
         {% if site.author.address %}
-        <li class="fa-home">1234 Somewhere Road #8254
+        <li class="fa-home">
+          {{ site.author.address }}
           {% if site.author.address2 %}
-          <br/>Nashville, TN 00000-0000
+          <br/>{{ site.author.address2 }}
           {% endif %}
         </li>
         {% endif %}

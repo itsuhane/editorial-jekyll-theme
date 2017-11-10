@@ -1,11 +1,4 @@
-# Dependencies
-markdown:         kramdown
-mathjax:          true
-
-# Permalinks
-permalink:        pretty
-
-# Setup
+# Information
 title:            Epipolar
 url:              https://itsuhane.github.io
 baseurl:          /editorial-jekyll-theme
@@ -24,4 +17,12 @@ author:
   address:        Zhejiang Univ.
   address2:       Hangzhou, China
 
+# Dependencies
+markdown:         kramdown
+mathjax:          true
+
+# Permalinks
+permalink:        pretty
+
+# Pagination
 paginate:         5
