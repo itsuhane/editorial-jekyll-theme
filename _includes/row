@@ -1,7 +1,0 @@
-{% if include.size %}
-<div class="row {{ include.size }}">
-{% else %}
-<div class="row">
-{% endif %}
-{{ include.content | markdownify }}
-</div>
