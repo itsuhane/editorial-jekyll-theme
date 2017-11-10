@@ -1,8 +1,1 @@
-{% comment %}
-This is used for quickly include image
-{% endcomment %}
-{% if include.pos %}
-<span class="image {{ include.pos }}"><img src="{{ site.baseurl }}{{ include.path }}" alt="" /></span>
-{% else %}
-<span class="image fit"><img src="{{ site.baseurl }}{{ include.path }}" alt="" /></span>
-{% endif %}
+<span class="image main"><img src="" alt="" /></span>
