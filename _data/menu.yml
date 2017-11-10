@@ -4,6 +4,8 @@
   url: /generic/
 - name: Elements
   url: /elements/
+- name: Markdown
+  url: /markdown/
 - name: Submenu
   items:
     - name: Lorem Dolor
