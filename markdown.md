@@ -76,23 +76,7 @@ Item3
 
 #### Fit
 
-
-    <span class="image fit"><img src="images/pic11.jpg" alt="" /></span>
-    <div class="box alt">
-      <div class="row 50% uniform">
-        <div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-        <div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-        <div class="4u$"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-        <!-- Break -->
-        <div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-        <div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-        <div class="4u$"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-        <!-- Break -->
-        <div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-        <div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-        <div class="4u$"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-      </div>
-    </div>
+{% include asset_image url="pic11.jpg" %}
 
 #### Left &amp; Right
 
