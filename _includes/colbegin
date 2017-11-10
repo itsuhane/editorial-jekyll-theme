@@ -10,3 +10,4 @@
 <div class="6u$ 12u$(small)">
 {% else %}
 {% endif %}
+{% capture col_content %}
