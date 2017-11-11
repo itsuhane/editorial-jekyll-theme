@@ -25,6 +25,9 @@ author:
 # Config for Menu
 menu:
   hidden:         false  # <-- change to true if you want menu hidden on loaded
+  search:         false
+  miniposts:      false
+  contact:        false
 
 defaults:
   - scope:
