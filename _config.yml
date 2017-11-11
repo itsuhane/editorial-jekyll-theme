@@ -22,6 +22,10 @@ author:
   github:         github
   #weibo:
 
+# Config for Menu
+menu:
+  hidden:         true
+
 # Dependencies
 markdown:         kramdown
 mathjax:          true

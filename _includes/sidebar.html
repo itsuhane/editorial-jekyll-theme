@@ -1,5 +1,9 @@
 <!-- Sidebar -->
+{%if site.menu.hidden %}
+<div id="sidebar" class="inactive">
+{% else %}
 <div id="sidebar">
+{% endif %}
   <div class="inner">
     <!-- Search -->
     <section id="search" class="alt">
