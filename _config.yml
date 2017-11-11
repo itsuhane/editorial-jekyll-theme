@@ -29,6 +29,9 @@ menu:
   miniposts:      false
   contact:        false
 
+# Disqus integration
+disqus_id:        epipolar # <-- disable by comment out this
+
 defaults:
   - scope:
       path:       ""
