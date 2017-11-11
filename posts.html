@@ -8,8 +8,7 @@ layout: default
   <div class="posts">
     {% for post in site.posts %}
     <article>
-      {% assign post_url=post.url %}
-      {% capture full_url %}{{ post_url | prepend site.baseurl }}{% endcapture %}
+      {% capture full_url %}{{ site.baseurl }}{{ post.url }}{% endcapture %}
       {% include link_image href=full_url url="/pic01.jpg" %}
       <h3>{{ post.title }}</h3>
       {{ post.excerpt }}
