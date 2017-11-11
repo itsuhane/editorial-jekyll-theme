@@ -16,6 +16,11 @@ author:
   phone:          (000) 000-0000
   address:        Zhejiang Univ.
   address2:       Hangzhou, China
+  twitter:        twitter
+  facebook:       facebook
+  instagram:      instagram
+  github:         github
+  #weibo:
 
 # Dependencies
 markdown:         kramdown
