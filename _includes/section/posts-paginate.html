@@ -28,6 +28,17 @@
       <span class="button disabled">Prev</span>
       {% endif %}
     </li>
+    {% for page in (1..paginator.total_pages) %}
+    <li>
+      {% if page == paginator.page %}
+      <span class="page active">1</span>
+      {% elsif page == 1 %}
+      <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="page">{{ page }}</a>
+      {% else %}
+      <a href="{{ site.baseurl }}{{ paginator.paginate_path | replace: ':num', page }}" class="page">{{ page }}</a>
+      {% endif %}
+    </li>
+    {% endfor %}
     <li>
       {% if paginator.next_page %}
       <a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="button">Next</a>
