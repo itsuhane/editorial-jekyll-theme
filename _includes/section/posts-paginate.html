@@ -31,9 +31,9 @@
     {% for page in (1..paginator.total_pages) %}
     <li>
       {% if page == paginator.page %}
-      <span class="page active">1</span>
+      <span class="page active">{{ page }}</span>
       {% elsif page == 1 %}
-      <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="page">{{ page }}</a>
+      <a href="{{ site.baseurl }}/" class="page">{{ page }}</a>
       {% else %}
       <a href="{{ site.baseurl }}{{ site.paginate_path | replace: ':num', page }}" class="page">{{ page }}</a>
       {% endif %}
