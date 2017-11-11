@@ -26,6 +26,15 @@ author:
 menu:
   hidden:         true
 
+defaults:
+  - scope:
+      path:       ""
+      type:       "posts"
+    values:
+      layout:     "post"
+      comment:    "true" # <-- change to false if you want comments off by-default
+      tags:       []
+
 # Dependencies
 markdown:         kramdown
 mathjax:          true
