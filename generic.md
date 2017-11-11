@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Generic
+comment: true
 ---
 {% include span_image url="/pic11.jpg" pos="main" %}
 
