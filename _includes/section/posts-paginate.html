@@ -35,7 +35,7 @@
       {% elsif page == 1 %}
       <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="page">{{ page }}</a>
       {% else %}
-      <a href="{{ site.baseurl }}{{ paginator.paginate_path | replace: ':num', page }}" class="page">{{ page }}</a>
+      <a href="{{ site.baseurl }}{{ site.paginate_path | replace: ':num', page }}" class="page">{{ page }}</a>
       {% endif %}
     </li>
     {% endfor %}
