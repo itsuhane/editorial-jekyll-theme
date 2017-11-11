@@ -91,7 +91,7 @@
 					.on('+large', function() {
 						$sidebar.addClass('inactive');
 					})
-					.on('-large !large', function() {
+					.on('-large', function() { // itsuhane: remove "!large" - allow hide on start.
 						$sidebar.removeClass('inactive');
 					});
 
