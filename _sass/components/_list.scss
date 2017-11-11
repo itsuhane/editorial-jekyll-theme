@@ -251,5 +251,7 @@
 
 		dd {
 			margin-left: _size(element-margin);
+			/* itsuhane: fix issues with kramdown */
+			margin-bottom: _size(element-margin);
 		}
 	}

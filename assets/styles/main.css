@@ -2872,6 +2872,11 @@
 			margin-left: 2em;
 		}
 
+/* itsuhane: fix dd formatting issues with kramdown */
+		dd {
+			margin-bottom: 2em;
+		}
+
 /* Table */
 
 	.table-wrapper {
