@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<section>
+  <header class="major">
+    <h2>Posts</h2>
+  </header>
+  <div class="posts">
+    {% for post in site.posts %}
+    {% include link_image href=post.url url="/pic01.jpg" %}
+    <h3>{{ post.title }}</h3>
+    {{ post.excerpt }}
+    <ul class="actions">
+      <li><a href="{{ post.url }}" class="button">More</a></li>
+    </ul>
+    {% endfor %}
+  </div>
+</section>
