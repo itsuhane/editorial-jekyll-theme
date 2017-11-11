@@ -22,7 +22,7 @@
 // Font.
 	$font: (
 		family:				('Open Sans', sans-serif),
-		family-heading:		('Roboto Slab', serif),
+		family-heading:		('Roboto Slab', sans-serif), // itsuhane: for Chinese fallback
 		family-fixed:		('Courier New', monospace),
 		weight:				400,
 		weight-bold:		600,
