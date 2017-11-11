@@ -24,7 +24,7 @@ author:
 
 # Config for Menu
 menu:
-  hidden:         true
+  hidden:         false  # <-- change to true if you want menu hidden on loaded
 
 defaults:
   - scope:

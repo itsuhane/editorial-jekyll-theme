@@ -7,12 +7,16 @@ layout: default
   </header>
   <div class="posts">
     {% for post in site.posts %}
-    {% include link_image href=post.url url="/pic01.jpg" %}
-    <h3>{{ post.title }}</h3>
-    {{ post.excerpt }}
-    <ul class="actions">
-      <li><a href="{{ post.url }}" class="button">More</a></li>
-    </ul>
+    <article>
+      {% assign full_url=post.url %}
+      {% capture full_url %}{{ full_url | prepend site.baseurl }}{% endcapture %}
+      {% include link_image href=full_url url="/pic01.jpg" %}
+      <h3>{{ post.title }}</h3>
+      {{ post.excerpt }}
+      <ul class="actions">
+        <li><a href="{{ full_url }}" class="button">More</a></li>
+      </ul>
+    </article>
     {% endfor %}
   </div>
 </section>
