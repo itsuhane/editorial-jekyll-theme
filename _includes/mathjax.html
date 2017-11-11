@@ -1,0 +1,32 @@
+  <script type="text/javascript">
+    window.MathJax = {
+      messageStyle: "none",
+      showMathMenu: false,
+      showMathMenuMSIE: false,
+      jax: ["input/TeX", "output/HTML-CSS"],
+      "HTML-CSS": { linebreaks: { automatic: true } },
+      extensions: ["tex2jax.js"],
+      TeX: {
+        extensions: ["AMSmath.js", "AMSsymbols.js", "autoload-all.js"],
+        Macros: {
+            {% include mathjax-macros.html %}
+          }
+      },
+      tex2jax: {
+        inlineMath: [['$', '$']],
+        displayMath: [['$$', '$$']],
+        processEscapes: true
+      }
+    };
+
+    (function (d, script) {
+      script = d.createElement('script');
+      script.type = 'text/javascript';
+      script.async = true;
+      script.onload = function () {
+        // remote script has loaded
+      };
+      script.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js';
+      d.getElementsByTagName('head')[0].appendChild(script);
+    }(document));
+  </script>

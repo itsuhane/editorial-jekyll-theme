@@ -3,3 +3,6 @@
 <script src="{{ site.baseurl }}{{ site.assets.scripts }}/util.js"></script>
 <!--[if lte IE 8]><script src="{{ site.baseurl }}{{ site.assets.scripts }}/ie/respond.min.js"></script><![endif]-->
 <script src="{{ site.baseurl }}{{ site.assets.scripts }}/main.js"></script>
+{% if site.mathjax %}
+{% include mathjax.html %}
+{% endif %}

@@ -4,3 +4,10 @@
 <link rel="stylesheet" href="{{ site.baseurl }}{{ site.assets.styles }}/main.css" />
 <!--[if lte IE 9]><link rel="stylesheet" href="{{ site.baseurl }}{{ site.assets.styles }}/ie9.css" /><![endif]-->
 <!--[if lte IE 8]><link rel="stylesheet" href="{{ site.baseurl }}{{ site.assets.styles }}/ie8.css" /><![endif]-->
+{% if site.mathjax %}
+<style type="text/css">
+.MathJax_Display {
+  margin-bottom: 2em!important;
+}
+</style>
+{% endif %}
