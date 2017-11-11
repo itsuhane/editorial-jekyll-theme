@@ -1,0 +1,40 @@
+<section>
+  <header class="major">
+    <h2>Posts</h2>
+  </header>
+  {% if paginator.total_posts >=1 %}
+  <div class="posts">
+    {% for post in paginator.posts %}
+    <article>
+      {% capture full_url %}{{ site.baseurl }}{{ post.url }}{% endcapture %}
+      {% include link_image href=full_url url="/pic01.jpg" %}
+      <h3>{{ post.title }}</h3>
+      {{ post.excerpt }}
+      <ul class="actions">
+        <li><a href="{{ full_url }}" class="button">More</a></li>
+      </ul>
+    </article>
+    {% endfor %}
+  </div>
+  {% else %}
+  <p>Unfortunately, we have no posts now. Please check back later.</p>
+  {% endif %}
+  {% if paginator.total_pages > 1 %}
+  <ul class="pagination">
+    <li>
+      {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}" class="button">Prev</a>
+      {% else %}
+      <span class="button disabled">Prev</span>
+      {% endif %}
+    </li>
+    <li>
+      {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="button">Next</a>
+      {% else %}
+      <span class="button disabled">Next</span>
+      {% endif %}
+    </li>
+  </ul>
+  {% endif %}
+</section>
